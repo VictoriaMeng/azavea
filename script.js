@@ -9,7 +9,6 @@ function getResults(event) {
     return resp.json();
   })
   .then(function(data) {
-    console.log(data)
     if (data.features.length === 0) errorMessage.innerHTML = "City not found";
     const id = data.features[0].id;
     fetch(
