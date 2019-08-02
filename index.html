@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js">
+    </script>
+  </head>
+
+  <body>
+    <h1>Average Daily Max Temperature by Year</h1>
+    <p>Modeled using RCP8.5</p>
+    <form onSubmit="getResults(event)">
+      <input type="search" name="search" id="search"></input>
+      <button>Search By City</button>
+    </form>
+    <p id="errorMessage"></p>
+    <h2 id="city"></h2>
+    <h2>2019</h2>
+    <p id="maxTemp2019"></p>
+    <h2>2060</h2>
+    <p id="maxTemp2060"></p>
+  </body>
+</html>
